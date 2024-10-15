@@ -13,11 +13,8 @@ async def measure_runtime():
     """Starts the timer"""
     start_time = time.perf_counter()
     """Run async_comprehension four times in parallel"""
-    await asyncio.gather(
-            async_comprehension(),
-            async_comprehension(),
-            async_comprehension(),
-            async_comprehension())
+    await asyncio.gather(*(async_comprehension()
+        for i in range(4)))
     """Stops the timer"""
     end_time = time.perf_counter()
     total_runtime = end_time - start_time
