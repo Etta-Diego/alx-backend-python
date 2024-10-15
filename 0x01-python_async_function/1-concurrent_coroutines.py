@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """This imports wait_random from the previous 0-basic_async_syntax.py file
 and writes an async routine called wait_n that takes in 2 int arguments
 (in this order): n and max_delay. It will spawn wait_random n times
