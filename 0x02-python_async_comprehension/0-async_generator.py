@@ -13,8 +13,7 @@ async def async_generator():
     loops = 10
     loop = 0
     while loop < loops:
-        yield random.uniform(0, 10)
-        # loop += 1
-        # waits 1 sec 
+        # waits 1 sec
         await asyncio.sleep(1)
+        yield random.uniform(0, 10)
         loop += 1
