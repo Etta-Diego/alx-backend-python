@@ -19,3 +19,4 @@ async def measure_runtime():
     end_time = time.perf_counter()
     total_runtime = end_time - start_time
     return total_runtime
+

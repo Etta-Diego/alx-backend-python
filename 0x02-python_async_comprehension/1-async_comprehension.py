@@ -13,3 +13,4 @@ It takes no arguments."""
 async def async_comprehension() -> List[float]:
     """Use an async comprehension to collect all 10 numbers into a list."""
     return [rand_num async for rand_num in async_generator()]
+
