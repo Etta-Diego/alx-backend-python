@@ -9,7 +9,7 @@ four times in parallel using asyncio.gather.
 It measures the total runtime and return it."""
 
 
-async def measure_runtime():
+async def measure_runtime() -> float:
     """Starts the timer"""
     start_time = time.perf_counter()
     """Run async_comprehension four times in parallel"""
