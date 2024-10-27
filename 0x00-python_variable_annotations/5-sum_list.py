@@ -12,5 +12,5 @@ def sum_list(input_list: List[float]) -> float:
     """sum up the list numbers"""
     output_list = 0
     for num in input_list:
-        output_list += num 
+        output_list += num
     return output_list
